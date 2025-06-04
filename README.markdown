@@ -44,30 +44,7 @@ Ensure the following are installed:
    ```bash
    git clone <repository-url>
    ```
-
-2. **Set Up the Environment**:
-   - Create a virtual environment (optional but recommended):
-     ```bash
-     python -m venv venv
-     source venv/bin/activate  # On Windows: venv\Scripts\activate
-     ```
-   - Install dependencies:
-     ```bash
-     pip install pandas numpy scikit-learn plotly
-     ```
-
-3. **Prepare the Dataset**:
-   - Ensure `Iris.csv` is in the same directory as `iris_knn_classification_enhanced.py`.
-   - The script handles data cleaning (removing missing values and outliers).
-
-4. **Run the Script**:
-   - Execute the Python script:
-     ```bash
-     python iris_knn_classification_enhanced.py
-     ```
-   - Alternatively, run in a Jupyter Notebook by copying the code into a `.ipynb` file.
-
-5. **View Outputs**:
+2. **View Outputs**:
    - **Console Output**: Accuracy, precision, recall, F1-score, 5-fold cross-validation scores, and confusion matrices for K values [1, 3, 5, 7, 9, 11, 15].
    - **Interactive Plots**: Plotly visualizations of decision boundaries for all feature pairs (e.g., PetalLengthCm vs. PetalWidthCm) for selected K values.
    - **Best K**: The script identifies the K value with the highest test accuracy.
@@ -125,14 +102,3 @@ Best K based on test accuracy: 5 (Accuracy: 0.9778)
 - **Decision Boundaries**: Hover over Plotly plots to inspect feature values, zoom to analyze boundaries, or pan to explore regions.
 - **Feature Pairs**: All combinations (e.g., SepalLengthCm vs. PetalWidthCm) are visualized to provide a comprehensive view of model behavior.
 
-## Future Improvements
-- Add hyperparameter tuning (e.g., distance metrics like Manhattan or Euclidean).
-- Incorporate feature selection techniques (e.g., PCA) to reduce dimensionality.
-- Extend to other classifiers (e.g., SVM, Random Forest) for comparison.
-- Add real-time prediction functionality for user-inputted Iris measurements.
-
-## License
-This project is licensed under the MIT License.
-
-## Contact
-For questions or contributions, reach out via GitHub or email.
